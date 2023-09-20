@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Uploadimg">
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:onClick="uploadImg"
+        android:id="@+id/img_upt"
+        android:background="#1A237E">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/photo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Images"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/text01"/>
+
+
+    </LinearLayout>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinning"
+        android:background="#CBD1D1"
+        android:layout_marginTop="20dp"
+        android:scrollbarSize="20dp"
+        android:layout_marginVertical="16dp"
+        android:spinnerMode="dropdown"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:backgroundTint='@color/teal_700'
+        android:onClick="updatesImage"/>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:padding="20dp"
+        android:background="#F3D2D2">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/img_galary_upt"
+
+            android:background="#F6CBCB"
+            android:layout_margin="20dp"/>
+
+
+    </com.google.android.material.card.MaterialCardView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:backgroundTint='@color/teal_700'
+        android:onClick="home"/>
+
+</LinearLayout>
